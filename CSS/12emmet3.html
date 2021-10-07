@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>emmet3</title>
+</head>
+<body>
+    <h3>class선택자</h3>
+    <!-- h1.error -->
+    <h1 class="error"></h1>
+    <!-- h1.error.note -->
+    <h1 class="error note"></h1>
+
+    <h3>id 선택자</h3>
+    <!-- h1#head1 -->
+    <h1 id="head1"></h1>
+
+    <!-- h1#head2.error.note -->
+    <h1 id="head2" class="error note"></h1>
+
+    <h3>numbering</h3>
+    <!-- p*3#para$ -->
+    <p id="para01"></p>
+    <p id="para02"></p>
+    <p id="para03"></p>
+    
+    <!-- p*3#para$@4 -->
+    <!-- p#para$@4*3 -->
+    <p id="para4"></p>
+    <p id="para5"></p>
+    <p id="para6"></p>
+    
+    <h3>형제 요소</h3>
+    <!-- h3+p+h2 -->
+    <h3></h3>
+    <p></p>
+    <h2></h2>
+
+    <!-- h1>lorem3+sub>lorem2 -->
+    <h1>Lorem, ipsum dolor.<sub>Lorem, ipsum.</sub></h1>
+
+    <h3>태그명 생략하면div</h3>
+    <!-- h1.error -->
+    <h1 class="error"></h1>
+    <!-- div.error -->
+    <!-- .error -->
+    <div class="error"></div>
+</body>
+</html>
