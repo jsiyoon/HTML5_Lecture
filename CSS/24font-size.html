@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>font size</title>
+    <style>
+        #div1{
+            font-size : 30px;
+        }
+        #div2, #div11{
+            font-size : 2em; /*부모 요소폰트 크기의 n배*/
+            /*부모요소 : 현 요소를 감싸고 있는 요소*/
+        }
+        #div3{
+            font-size : 1.5em; /*부모 요소폰트 크기의 1.5배*/        
+        }
+        #div4{
+            font-size : 2rem /*루트 요소 폰트 크기의 n배*/
+            /*루트요소 : 최상위의 요소*/
+        }
+        body{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">Lorem ipsum dolor sit amet.</div>
+    <div id="div11">
+        <div id="div2">Aliquid similique minima quibusdam blanditiis!</div>
+    </div>
+    
+    <div id="div3">Ullam numquam sit est alias.</div>
+    <div id="div4">Maiores excepturi molestias rem hic.</div>
+    <div id="div5">Dignissimos obcaecati illo hic ab?</div>
+    <div id="div6">Tempore aspernatur consequuntur ea expedita?</div>
+    <div id="div7">Animi voluptatem delectus soluta omnis.</div>
+    <div id="div8">Nesciunt placeat sequi natus eos.</div>
+    <div id="div9">Nihil unde ipsum maiores corporis?</div>
+    <div id="div10">Delectus cum alias et quos.</div>
+</body>
+</html>
