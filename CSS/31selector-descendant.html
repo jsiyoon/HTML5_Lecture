@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>descendant</title>
+    <style>
+        div p{/*p요소중 div를 조상으로 두고 있는 것들*/
+              /*div의 자손인 p들*/
+            color : blue;
+        }
+        body p{/*body안에 있는 모든 p요소들*/
+            text-decoration : underline;
+        }
+        body > p{ /*body를 바로 상속받는 p만*/
+            font-size : 32px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui saepe cupiditate nulla tempora consequuntur odit praesentium esse eligendi consequatur? Officiis nobis laborum exercitationem hic est excepturi sapiente praesentium modi. Suscipit.</p>
+    </div>
+    <div>
+        <p>Cumque, nulla totam voluptate enim voluptas repellat velit iusto nisi atque ab dignissimos et est, laboriosam harum soluta ipsa architecto libero eaque sit quos eveniet quam earum? Fuga, fugit nesciunt.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, culpa ratione ex quis consequuntur maiores voluptatibus in officiis voluptates aliquid animi repellendus fuga impedit, sequi saepe ipsam explicabo ipsa accusantium.</p>
+    <p>Ipsum ducimus tempore tempora ipsa quaerat sint fuga, quasi similique, soluta vitae inventore! Alias, maiores assumenda asperiores eveniet mollitia praesentium voluptate? Laudantium, a. Ducimus necessitatibus laboriosam sit beatae suscipit. Quidem!</p>
+</body>
+</html>
