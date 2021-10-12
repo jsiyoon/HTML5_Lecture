@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>align items</title>
+    <style>
+        .container{
+            display: flex;
+            margin-top : 15px;
+            height: 300px;
+            background-color: skyblue;
+            justify-content: space-evenly;
+        }
+        .item{
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: snow;
+            background-color: blue;
+            width: 100px;
+        }
+        .item:nth-child(2n){
+            background-color: red;
+        }
+        #container1{
+            align-items: stretch;
+        }
+        #container2{
+            align-items: flex-start;
+        }
+        #container3{
+            align-items: center;
+        }
+        #container4{
+            align-items: flex-end;
+        }
+        #container5{
+            align-items: baseline;
+        }
+        #container5 > .item:first-child{
+            font-size: 65px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container1">
+        <div class="item" contenteditable="contenteditable">1</div>
+        <div class="item" contenteditable="contenteditable">2</div>
+        <div class="item" contenteditable="contenteditable">3</div>
+        <div class="item" contenteditable="contenteditable">4</div>
+        <div class="item" contenteditable="contenteditable">5</div>
+    </div>
+    <div class="container" id="container2">
+        <div class="item" contenteditable="contenteditable">1</div>
+        <div class="item" contenteditable="contenteditable">2</div>
+        <div class="item" contenteditable="contenteditable">3</div>
+        <div class="item" contenteditable="contenteditable">4</div>
+        <div class="item" contenteditable="contenteditable">5</div>
+    </div>
+    <div class="container" id="container3">
+        <div class="item" contenteditable="contenteditable">1</div>
+        <div class="item" contenteditable="contenteditable">2</div>
+        <div class="item" contenteditable="contenteditable">3</div>
+        <div class="item" contenteditable="contenteditable">4</div>
+        <div class="item" contenteditable="contenteditable">5</div>
+    </div>
+    <div class="container" id="container4">
+        <div class="item" contenteditable="contenteditable">1</div>
+        <div class="item" contenteditable="contenteditable">2</div>
+        <div class="item" contenteditable="contenteditable">3</div>
+        <div class="item" contenteditable="contenteditable">4</div>
+        <div class="item" contenteditable="contenteditable">5</div>
+    </div>
+    <div class="container" id="container5">
+        <div class="item" contenteditable="contenteditable">1</div>
+        <div class="item" contenteditable="contenteditable">2</div>
+        <div class="item" contenteditable="contenteditable">3</div>
+        <div class="item" contenteditable="contenteditable">4</div>
+        <div class="item" contenteditable="contenteditable">5</div>
+    </div>
+</body>
+</html>
