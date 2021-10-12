@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../icon/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <title>flexbox연습</title>
+    <style>
+        .main-container{
+            display: flex;
+            height : 42px;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .menu-container{
+            display: flex;
+            justify-content: space-between;
+            background-color: #222;
+            color : white;
+        }
+        .left-menu, .right-menu{
+            display: flex;
+        }
+        
+        .menu-item{
+            padding:5px 10px;
+            font-size: 20px;
+        }
+        .main-item{
+            padding:5px 10px;
+        }
+        .menu-item:hover{
+            background-color: grey;
+        }
+        .button{
+            padding : 5px 10px;
+            color: white;
+            background-color: seagreen;
+            border-radius: 30px;
+        }
+        .button:hover{
+            background-color: darkolivegreen;
+        }
+        .main-container>.left-menu>div{
+            margin-right : 10px;
+        }
+        .main-container>.left-menu, .main-container>.right-menu{
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-menu">
+            <div><i style="font-size: 60px; color:seagreen;" class="fab fa-weebly"></i></div>
+            <div style="font-weight: bold;">MENU<i class="fas fa-caret-down"></i></div>
+        </div>
+        <div class="rigth-menu">
+            <div class="button">Log in</div>
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <div class="left-menu">
+            <div class="menu-item"><i class="fas fa-home"></i></div>
+            <div class="menu-item"><i class="fas fa-bars"></i></div>
+            <div class="menu-item">HTML</div>
+            <div class="menu-item">CSS</div>
+            <div class="menu-item">JAVASCRIPT</div>
+        </div>
+        <div class="right-menu">
+            <div class="menu-item"><i class="fas fa-adjust"></i></div>
+            <div class="menu-item"><i class="fas fa-globe-asia"></i></div>
+            <div class="menu-item"><i class="fas fa-search"></i></div>
+        </div>
+    </div>
+</body>
+</html>
