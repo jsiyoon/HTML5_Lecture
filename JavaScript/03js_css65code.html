@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>absolute, drop down menu</title>
+    <style>
+        .main-menu{
+            display: flex;
+            background-color: #333;
+            font-size: 16px;
+            color:white;
+        }
+        .main-menu-item{
+            padding: 14px;
+            position: relative;
+        }
+        .main-menu-item:hover{
+            background-color: red;
+        }
+        /*.main-menu-item:hover>.drop-down-menu{
+            display:block;
+        }*/
+        .drop-down-menu{
+            /*display: none;*/
+            position: absolute;
+            color: black;
+            background-color: white;
+            left: 0px;
+            top: 50px;
+            padding:14px;
+            width: 85px;  
+        }
+        .drop-down-menu-item:hover{
+            background-color: grey;
+        }
+        .d-none{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-menu">
+        <div class="main-menu-item">Home</div>
+        <div class="main-menu-item">News</div>
+        <div id = "menu1" class="main-menu-item">
+            Dropdown<i class="fas fa-caret-down"></i>
+            <div class="drop-down-menu d-none">
+                <div class="drop-down-menu-item">Link 1</div>
+                <div class="drop-down-menu-item">Link 2</div>
+                <div class="drop-down-menu-item">Link 3</div>
+            </div>
+        </div>
+    </div>
+    <h1>Lorem, ipsum dolor.</h1>
+    <script>
+        document.querySelector("#menu1").onclick = function(){
+           document.querySelector("#menu1 .drop-down-menu").classList.toggle("d-none");
+        }
+    </script>
+</body>
+</html>
