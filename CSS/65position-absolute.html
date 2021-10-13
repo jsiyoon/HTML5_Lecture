@@ -8,7 +8,7 @@
             display: flex;
             background-color: #333;
             font-size: 16px;
-            color: white;
+            color:white;
         }
         .main-menu-item{
             padding: 14px;
@@ -17,20 +17,18 @@
         .main-menu-item:hover{
             background-color: red;
         }
+        .main-menu-item:hover>.drop-down-menu{
+            display:block;
+        }
         .drop-down-menu{
             display: none;
             position: absolute;
+            color: black;
             background-color: white;
-            color:black;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            left : 0px;
+            left: 0px;
             top: 50px;
-            padding: 14px;
-            width: 90px;
-        }
-        .main-menu-item:hover> .drop-down-menu{
-            display: block;
-            position: absolute;
+            padding:14px;
+            width: 85px;  
         }
         .drop-down-menu-item:hover{
             background-color: grey;
@@ -42,7 +40,7 @@
         <div class="main-menu-item">Home</div>
         <div class="main-menu-item">News</div>
         <div class="main-menu-item">
-            Dropdown <i class="fas fa-caret-down"></i>
+            Dropdown<i class="fas fa-caret-down"></i>
             <div class="drop-down-menu">
                 <div class="drop-down-menu-item">Link 1</div>
                 <div class="drop-down-menu-item">Link 2</div>
@@ -50,5 +48,6 @@
             </div>
         </div>
     </div>
+    <h1>Lorem, ipsum dolor.</h1>
 </body>
 </html>
