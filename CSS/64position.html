@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>position fixed</title>
+    <style>
+       *{
+           font-size: 24px;
+       }
+       .main-menu-item{
+           text-align: right;
+           background-color: black;
+           color: white;
+           width: 200px;
+           height: 75px;
+           border-right: 10px solid black;
+           position: relative;
+       }
+       .sub-menu{
+           background-color: black;
+           color: white;
+           display: none;
+           position: absolute;
+           top:0px;
+           left:210px;
+       }
+       .main-menu-item:hover>.sub-menu{
+           display: block;
+       }
+       .main-menu-item:hover{
+            border-right-color: slateblue;
+       }
+    </style>
+</head>
+<body>
+   <div class="main-menu">
+       <div class="main-menu-item">
+           Lorem.
+           <div class="sub-menu">
+               <div class="sub-menu-item">Lorem.</div>
+               <div class="sub-menu-item">Eius.</div>
+               <div class="sub-menu-item">Corrupti?</div>
+               <div class="sub-menu-item">Id.</div>
+               <div class="sub-menu-item">Consequatur?</div>
+           </div>
+       </div>
+       <div class="main-menu-item">
+           Voluptates.
+           <div class="sub-menu">
+               <div class="sub-menu-item">Lorem.</div>
+               <div class="sub-menu-item">Iste!</div>
+               <div class="sub-menu-item">Eum!</div>
+               <div class="sub-menu-item">Exercitationem!</div>
+               <div class="sub-menu-item">Id.</div>
+           </div>
+       </div>
+       <div class="main-menu-item">
+           Vitae?
+           <div class="sub-menu">
+               <div class="sub-menu-item">Lorem.</div>
+               <div class="sub-menu-item">Eos.</div>
+               <div class="sub-menu-item">Maxime?</div>
+               <div class="sub-menu-item">Nihil?</div>
+               <div class="sub-menu-item">Optio.</div>
+           </div>
+       </div>
+       <div class="main-menu-item">
+           Eveniet.
+           <div class="sub-menu">
+               <div class="sub-menu-item">Lorem.</div>
+               <div class="sub-menu-item">Ex.</div>
+               <div class="sub-menu-item">Impedit!</div>
+               <div class="sub-menu-item">Aut.</div>
+               <div class="sub-menu-item">Debitis!</div>
+           </div>
+       </div>
+       <div class="main-menu-item">
+           Doloremque.
+           <div class="sub-menu">
+               <div class="sub-menu-item">Lorem.</div>
+               <div class="sub-menu-item">Tenetur?</div>
+               <div class="sub-menu-item">Aliquid!</div>
+               <div class="sub-menu-item">Molestias?</div>
+               <div class="sub-menu-item">Animi.</div>
+           </div>
+       </div>
+   </div>
+</body>
+</html>
