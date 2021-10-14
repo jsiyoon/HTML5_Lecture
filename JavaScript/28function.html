@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>function</title>
+</head>
+<body>
+    <script>
+       function func1(){
+           function func2(){
+               console.log("func2");
+           }
+
+           console.log("func1");
+           func2(); //o
+       }
+       func1();
+       //func2();//x --> 함수 밖에서 사용불가.
+
+
+       //val1(); //함수를 값으로 사용하면 함수 선언전에 함수사용 불가능해짐. 
+       let val1 = function(){ //함수를 값으로 사용
+           console.log("값으로 정의된 함수");
+       }
+       val1(); //함수 선언 이후에 사용가능.
+       val1();
+    </script>
+</body>
+</html>

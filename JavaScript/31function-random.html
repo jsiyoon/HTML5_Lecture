@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>random</title>
+</head>
+<body>
+    <input type="text" id="input1" value ="1">
+    <input type="text" id="input2" value ="5">
+    <br>
+    <button onclick="showRandom();">랜덤값 출력</button>
+
+    <script>
+        //문자열로 쓰이는 값을 가져와서 숫자형태로 바꿔주는 함순
+        function showRandom(){
+            let v1 = Number(document.querySelector("#input1").value);
+            let v2 = Number(document.querySelector("#input2").value);
+
+            let r = genRandom(v1, v2);
+            console.log(r);
+        }
+        function genRandom(a,b){
+            let len = (b-a) + 1; //8-1+1 = 5
+            let ran = parseInt(Math.random()*len); //0~4랜덤값
+            let result = ran + a; //1~5랜덤값
+
+            return result;
+        }
+    </script>
+</body>
+</html>
