@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>return</title>
+</head>
+<body>
+    <script>
+        //return :
+        //1.메소드 종료
+        //2.오른쪽에 있는 값 반환(return)
+
+        function func1(){
+            console.log(1, "func1 실행됨");
+            console.log(2, "funx1 실행중");
+            return;
+            console.log(3, "func1 실행중"); //실행되지 않음.
+        }
+
+        func1();
+        console.log("코드 실행중......");
+
+        function func2(){
+            console.log(1, "func2 실행됨");
+            return 3;
+            console.log(2, "func2 실행중"); //실행되지 않음.
+        }
+
+        let a = func2();//3 -> 위func2함수에서 return 3을 했기 때문에 3이 return 됨.
+        console.log("코드 실행중!!!!");
+        console.log(a);
+        console.log(func2()); // ->위 func2함수를 출력하는것이기 때문에 func2실행됨의 문자열과 3이 출력됨.
+    </script>
+</body>
+</html>
