@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>random</title>
+</head>
+<body>
+    <input type="text" value="5">
+    <button onclick="showRandom();">랜덤 값 출력</button>
+    <script>
+       function showRandom(){
+           let val = document.querySelector("input").value; //"5"
+           val = Number(val);
+
+           //genRandom함수 정의
+           let r = genRandom(val);
+           console.log(r); //1~val사이의 임의값 출력
+       }
+       function genRandom(param){
+           return parseInt(Math.random()*param)+1;
+       }
+    </script>
+</body>
+</html>
