@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>comparison</title>
+</head>
+<body>
+    <script>
+        let a = 3;
+        let b = 5;
+        let f = "5";
+
+        console.log(a == b);
+        console.log(a != b);
+        console.log(a > b);
+        console.log(a >= b);
+        console.log(a < b);
+        console.log(a <= b);
+
+        //다른 타입과 비교
+        //타입에 민감하지않아 비교가능.
+        console.log("==다른 타입과 비교==");
+        let c = 3;
+        let d = "3";
+
+        console.log(c == d); //양변의 type중 number가 있으면 number로 변환해서 비교
+        console.log(c < f);
+
+        //같은 type인지 확인할 때
+        console.log( c === d); //타입도 같고, 값도 같아야 true;
+        console.log( c !== d);
+        console.log( a === c);
+    </script>
+</body>
+</html>
