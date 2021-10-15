@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>dom get element</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <p class="note" id="para1">Lorem.</p>
+    <p class="note" id="para2">Expedita.</p>
+    <p class="note" id="para3">Eum.</p>
+<script>
+    //console모든 p요소의 content가 출력
+    let heads = document.querySelectorAll("p");
+    console.log(heads[0].innerHTML);
+    console.log(heads[1].innerHTML);
+    console.log(heads[2].innerHTML);
+    //모든 p요소의 content를 "hello"변경
+    heads[0].innerHTML = "hello";
+    heads[1].innerHTML = "hello";
+    heads[2].innerHTML = "hello";
+</script>
+</body>
+</html>
