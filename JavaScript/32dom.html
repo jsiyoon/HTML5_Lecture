@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1 id="head1">hello</h1>
+    <p id="para1">javascript</p>
+    <script>
+        let h = document.getElementById("head1");
+        console.log(h);
+        console.log(h.innerHTML);
+        h.innerHTML="hi"; //문서정보 변경
+
+        //p요소의 content를 출력하고("javascript")
+        //p요소의 content를 "자바스크립트" 변경
+        let j = document.getElementById("para1");
+        console.log(j);
+        console.log(j.innerHTML);
+        j.innerHTML="자바스크립트";//문서정보변경
+
+    </script>
+</body>
+</html>
