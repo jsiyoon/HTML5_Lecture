@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>value</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <input type="text" id="input1">
+    <p onclick="changeVal(0);">
+        Lorem.
+    </p>
+    <p onclick="changeVal(1);">
+        Deserunt!
+    </p>
+    <p onclick="changeVal(2);">
+        Sint.
+    </p>
+    <p onclick="changeVal(3);">
+        Fuga!
+    </p>
+    <p onclick="changeVal(4);">
+        Necessitatibus!
+    </p>
+<script>
+    function changeVal(a){
+        let c = document.querySelectorAll("p");
+        document.querySelector("#input1").value = c[a].innerHTML;
+    }
+</script>
+</body>
+</html>
