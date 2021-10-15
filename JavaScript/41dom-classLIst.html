@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>classList</title>
+    <style>
+        .dark{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="toggleDark();">
+        <i class="fas fa-adjust"></i>
+    </button>
+    <div>
+        <h1>
+            Lorem.
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vel ad veritatis reprehenderit qui ea atque provident recusandae, minus rem, id inventore, asperiores mollitia repudiandae culpa voluptatum ratione. Officia, nesciunt?
+        </p>
+    </div>
+<script>
+    function toggleDark() {
+        let div = document.querySelector("div");
+        div.classList.toggle("dark"); // dark 클래스가 없으면 추가, 있으면 삭제
+    }
+</script>
+</body>
+</html>
