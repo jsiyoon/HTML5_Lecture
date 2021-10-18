@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>for</title>
+    <style>
+     .ball{
+         background-color: slateblue;
+         border-radius: 50%;
+         color : white;
+         width: 100px;
+         height: 100px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        font-weight: bold;
+        font-size: 60px;
+     }
+    </style>
+</head>
+<body>
+    <button onclick="lotto();">로또</button>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+<script>
+    function lotto(){
+        let location = document.querySelectorAll(".ball");
+        for(let j = 0; j < location.length; j++){
+            let value = parseInt(Math.random()*45) + 1;
+            location[j].innerHTML = value;
+        }
+    }
+</script>
+</body>
+</html>
