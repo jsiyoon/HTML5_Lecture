@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>array</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    
+<script>
+    let arr1 = [];
+    console.log(arr1.length);//0
+    
+    //마지막 값 추가: push();
+    arr1.push(3);
+    arr1.push(100);
+    arr1.push(200);
+    console.log(arr1.length);//3
+
+    //마지막 아이템 삭제 pop()
+    console.pop("마지막", arr1[arr1.length-1]);
+    arr1.pop();
+    console.log(arr1.length);
+    console.pop("마지막", arr1[arr1.length-1]);
+    arr1.pop();
+    console.log(arr1.length);
+    arr1.pop("마지막", arr1[arr1.length-1]);
+    console.log(arr1.length);
+</script>
+</body>
+</html>
