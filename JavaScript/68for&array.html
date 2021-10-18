@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>array</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <input type="text" id="input1">
+    <button onclick="add();">추가</button>
+    <button onclick="result();">출력</button>
+    <button onclick="del();">삭제</button>
+<script>
+    let arr = [];
+    let str = document.querySelector("#input1");
+    function add(){
+        arr.push(str.value);
+    }
+
+    function result(){
+        for(let i = 0; i< arr.length; i++){
+            console.log(i, arr[i]);
+        }
+        console.log("arr", arr);
+    }
+    function del(){
+        arr.pop();
+    }
+</script>
+</body>
+</html>
