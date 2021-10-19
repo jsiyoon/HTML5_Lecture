@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>event</title>
+    <style>
+    span{
+        font-size: 50px;
+    }
+    </style>
+</head>
+<body>
+    <span id="icon" onclick="countup();">
+        <i class="fas fa-thumbs-up"></i>
+    </span>
+    <span id="count">0</span>
+<script>
+    function countup(){
+        let val = Number(document.querySelector("#count").innerHTML);
+        val ++;
+
+        document.querySelector("#count").innerHTML = val;
+    }
+</script>
+</body>
+</html>
