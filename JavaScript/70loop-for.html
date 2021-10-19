@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>2중 for문 구구단(거꾸로)</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <button onclick="reverse()">거꾸로 구구단</button>
+    <p id="result"></p>
+<script>
+    function reverse(){
+        let gu = document.querySelector("#result")
+
+        let gugudan = "";
+        for(let i = 9; i > 1; i--){
+            for(let j = 1; j < 10; j++){
+                console.log(i + " X " + j + " = " + (i*j));
+                gugudan += i + " X " + j + " = " + (i*j) + "<br>";
+            }
+        }
+        gu.innerHTML = gugudan;
+    }
+</script>
+</body>
+</html>
