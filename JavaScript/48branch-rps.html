@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>주먹가위보</title>
+    <style>
+        i{
+            font-size: 70px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="rps();">주먹 가위 보</button>
+    <div>
+        <span>
+            <i class="fas"></i>
+        </span>
+    </div>
+<script>
+    function rps(){
+        let r = parseInt(Math.random()*3); //0~2까지의 랜덤
+
+        let icon = document.querySelector("i");
+        icon.classList.remove("fa-hand-rock", "fa-hand-paper","fa-hand-scissors");
+        if(r == 0){
+            //console.log("가위");
+            icon.classList.add("fa-hand-scissors");
+        }else if(r == 1){
+            //console.log("바위");
+            icon.classList.add("fa-hand-rock");
+        }else{
+            //console.log("보");
+            icon.classList.add("fa-hand-paper");
+        }
+    }
+</script>
+</body>
+</html>
