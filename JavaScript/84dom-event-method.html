@@ -9,6 +9,7 @@
 </head>
 <body>
     <input type="text" id="input1">
+    <h1 id="head1"></h1>
 <script>
     //#input1요소에 keyup이벤트 발생시 value console출력
     //addEventListner메소드 활용
@@ -16,6 +17,10 @@
     let head = document.querySelector("#input1");
     head.addEventListener("keyup", function(){
         console.log(head.value);
+    });
+
+    document.querySelector("#input1").addEventListener("keyup", function(){
+        document.querySelector("#head1").innerHTML = document.querySelector("#input1").value;
     });
 </script>
 </body>
