@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>onload</title>
+    <style>
+    
+    </style>
+    <script> // 스크립트가 꼭 아래에 위치하지 않아도실행됨.
+        window.addEventListener("load", function(){
+            console.log("로딩완료");
+
+            let elem = document.querySelector("#head1");
+            console.log("로딩 후", elem.innerHTML);
+        });
+    </script>
+</head>
+<body>
+    <h1>
+        <div id="head1">
+            Lorem.
+        </div>
+    </h1>
+<script>
+    console.log(document.querySelector("#head1").innerHTML);
+    //document.querySelector("#head1").addEventListener("click", function(params){
+
+    //});
+</script>
+</body>
+</html>
