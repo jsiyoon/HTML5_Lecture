@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>글자색 바꾸기</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    name
+    <input type="text" id="input1">
+    color
+    <input type="text" id="input2">
+    <button>+</button>
+
+    <ul id="list1">
+        <li style="color:blue;">
+            Lorem.
+        </li>
+    </ul>
+<script>
+    document.querySelector("button").onclick = function(){
+        let text = document.querySelector("#input1").value;
+        let textcolor = document.querySelector("#input2").value;
+
+        document.querySelector("#list1").innerHTML += `<li style="color:${textcolor};">${text}</li>`;
+    }
+</script>
+</body>
+</html>
