@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>filter-eq</title>
+    <style>
+    
+    </style>
+<script>
+        $(document).ready(function(){
+            $("#input1").keyup(function(){
+                let lists = $("#list1 li");
+                
+                //lists.eq(i) => lists의 i번째 포함되어있으면 출력 그렇지 않으면 보이지 않게
+                for(let i = 0; i < lists.length; i++){
+                    let text = lists.eq(i).text();
+                    if(text.toLowerCase().includes($(this).val())){
+                        lists.eq(i).show();
+                    }else{
+                        lists.eq(i).hide();
+                    }
+                }
+            });
+        });
+</script>
+</head>
+<body>
+    <input type="text" id="input1">
+    <ul id="list1">
+        <li>
+            Lorem ipsum dolor sit amet.
+        </li>
+        <li>
+            Tempora similique facilis laborum ipsa?
+        </li>
+        <li>
+            Libero consectetur sed soluta deserunt?
+        </li>
+        <li>
+            Ipsa, perferendis. Totam, reprehenderit mollitia?
+        </li>
+        <li>
+            Ut repellat inventore quo officiis?
+        </li>
+        <li>
+            Dignissimos ratione provident eveniet quod.
+        </li>
+        <li>
+            Id architecto culpa nesciunt magni!
+        </li>
+        <li>
+            Harum numquam vitae recusandae aperiam.
+        </li>
+        <li>
+            Repellendus eveniet exercitationem error est.
+        </li>
+        <li>
+            Natus mollitia consequatur quod itaque.
+        </li>
+        <li>
+            Dolores quas sed impedit natus?
+        </li>
+        <li>
+            Molestias repellendus modi perferendis vero?
+        </li>
+        <li>
+            Eos labore a voluptas cum.
+        </li>
+        <li>
+            Temporibus consequuntur quidem recusandae pariatur?
+        </li>
+        <li>
+            Tempore, quis! Eius, possimus placeat?
+        </li>
+        <li>
+            Illo consequatur eligendi deleniti error!
+        </li>
+        <li>
+            Quaerat nemo quae dolorum enim.
+        </li>
+        <li>
+            Repellendus cumque vel laboriosam nam.
+        </li>
+        <li>
+            Expedita a pariatur culpa beatae.
+        </li>
+        <li>
+            Mollitia excepturi natus aliquam ex.
+        </li>
+        <li>
+            A distinctio veniam ullam nam?
+        </li>
+        <li>
+            Quas, maxime! Consequuntur, voluptatum quasi.
+        </li>
+        <li>
+            Officia fugiat beatae maxime nihil!
+        </li>
+        <li>
+            Quaerat consequuntur quisquam velit animi!
+        </li>
+        <li>
+            Eaque dolor harum consequuntur numquam.
+        </li>
+        <li>
+            Corrupti, iste accusamus! Consectetur, est.
+        </li>
+        <li>
+            Omnis, aspernatur. Facilis, at quidem.
+        </li>
+        <li>
+            Adipisci autem natus repellendus officiis.
+        </li>
+        <li>
+            Ipsum magni deserunt fuga dolorem!
+        </li>
+        <li>
+            Tenetur similique debitis esse aliquam?
+        </li>
+    </ul>
+</body>
+</html>
