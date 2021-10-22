@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title></title>
+    <style>
+        body{
+            flex: 1;
+            height: 100%;
+            text-align: center;
+            align-content: center;
+            padding-top: 40px;
+        }
+        .big{
+            width: 600px;
+            height: 600px;
+            background-color: burlywood;
+        }
+        .small{
+            width: 100px;
+            height: 60px;
+        }
+    </style>
+<script>
+        $(document).ready(function(){
+            $(".small").mouseover(function(){
+                let image = $(this).attr("src");
+                $(".big").attr("src", image);
+            });
+        });
+</script>
+</head>
+<body>
+    <img src="" alt="" class="big">
+    <br>
+    <img src="bts.jpg" alt="" class="small">
+    <img src="po.jpg" alt="" class="small">
+    <img src="chulchul.jpg" alt="" class="small">
+</body>
+</html>
