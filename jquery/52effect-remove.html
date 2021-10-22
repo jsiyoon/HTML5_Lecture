@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>요소 자체가 사라짐.</title>
+    <style>
+        div{
+            border: 5px solid green;
+            margin: 15px;
+        }
+    </style>
+<script>
+        $(document).ready(function(){
+            $("div").click(function(){
+                $(this).remove();
+            });
+        });
+</script>
+</head>
+<body>
+    <div id="container1">
+        <h1>
+            Lorem.
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, officia provident dolorem expedita dolorum voluptate recusandae architecto laudantium eos? Harum, ullam reprehenderit cupiditate numquam odio animi impedit nemo voluptatum illum.
+        </p>
+    </div>
+    <div id="container2">
+        <h1>
+            Repellendus?
+        </h1>
+        <p>
+            Sint iusto consectetur ratione magni magnam obcaecati tempora, sapiente eos corrupti accusantium suscipit praesentium dignissimos, animi dolorum, impedit voluptatum est illo dolore maiores molestias doloremque ipsam? Quaerat laborum praesentium nulla!
+        </p>
+    </div>
+    <div id="container3">
+        <h1>
+            Officiis?
+        </h1>
+        <p>
+            Dignissimos cum nisi laboriosam dolore ea, corrupti similique quaerat sequi tempora expedita reprehenderit magni reiciendis fugiat nam quibusdam? Aliquam dolor voluptatem velit sequi, sint expedita dolorum culpa quaerat aperiam a?
+        </p>
+    </div>
+    <div id="container4">
+        <h1>
+            Itaque?
+        </h1>
+        <p>
+            Magni ipsa possimus odio id cumque perspiciatis assumenda consectetur ullam voluptatem cum aut quia nam, veritatis delectus sint? Dolores unde enim quibusdam ratione sequi eligendi quae harum est aspernatur quasi?
+        </p>
+    </div>
+    <div id="container5">
+        <h1>
+            Culpa.
+        </h1>
+        <p>
+            Aliquam eligendi laudantium vero hic. Cupiditate porro id enim eum rerum commodi voluptates maiores voluptate voluptatibus atque nihil quibusdam nobis autem quaerat ipsa minima totam earum pariatur odit, voluptas exercitationem!
+        </p>
+    </div>
+</body>
+</html>
